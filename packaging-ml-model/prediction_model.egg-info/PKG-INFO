@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prediction_model
+Version: 1.0.0
+Summary: Diabetes Classification Model
+Home-page: https://github.com/manishdhull1990/MLOPS
+Author: Manish Dhull
+Author-email: manishdhull1990@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: flask
+Requires-Dist: dvc
+Requires-Dist: dill
+
+Diabetes Classification Model
