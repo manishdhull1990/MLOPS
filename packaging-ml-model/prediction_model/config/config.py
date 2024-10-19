@@ -5,15 +5,19 @@ PACKAGE_ROOT = pathlib.Path(prediction_model.__file__).resolve().parent
 
 DATAPATH = os.path.join(PACKAGE_ROOT,"datasets")
 
-FILE_NAME = 'loan_approval_dataset.csv'
-TEST_FILE = "test_data.csv"
+FILE_NAME = 'train.csv'
+TEST_FILE = "test.csv"
 
 MODEL_NAME = 'classification.pkl'
 SAVE_MODEL_PATH = os.path.join(PACKAGE_ROOT,'trained_models')
 
-TARGET = 'loan_status'
+TARGET = 'Outcome'
 
 #Final features used in the model
-FEATURES = ['no_of_dependents', 'education', 'self_employed', 'income_annum',
-       'loan_amount', 'loan_term', 'cibil_score', 'residential_assets_value',
-       'commercial_assets_value', 'luxury_assets_value', 'bank_asset_value','loan_status']
+FEATURES = ["Pregnancies","Glucose","BloodPressure","SkinThickness","Insulin","BMI",
+            "DiabetesPedigreeFunction","Age","Outcome"]
+NUMERICAL_COLS = ["Pregnancies","Glucose","BloodPressure","SkinThickness","Insulin",
+                  "BMI","DiabetesPedigreeFunction","Age"]
+
+#Impute Columns
+strategy='median'
