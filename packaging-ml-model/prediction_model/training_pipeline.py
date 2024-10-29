@@ -15,11 +15,17 @@ from prediction_model.processing.data_handling import load_dataset,save_pipeline
 import prediction_model.pipeline as pipe
 import prediction_model.processing.model_training as training
 import sys
+from prediction_model.util.logger_util import logging
 
 def perform_training():
+    logfilename = os.path.join(config.LOGPATH, config.LOGFILE)
+    with open(logfilename,'w'):pass
+    logging.info("Triggering from training")
     dataset = load_dataset(config.FILE_NAME)
     X,y = separate_data(dataset)
+    logging.info("Data Transformation pipeline has started")
     transformed_df=pipe.classification_pipeline.fit_transform(X, y)
+    logging.info("Data Transformation pipeline has finished")
     X_train,X_test,y_train,y_test = split_data(transformed_df,y)
     train_data = X_train.copy()
     train_data[config.TARGET] = y_train
@@ -30,5 +36,5 @@ def perform_training():
     save_pipeline(training.bestmodelfinder(X_train,X_test,y_train,y_test))
 
 if __name__=='__main__':
-    print("\n Triggering from training")
+    #print("\n Triggering from training")
     perform_training()

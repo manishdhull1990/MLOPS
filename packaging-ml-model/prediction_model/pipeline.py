@@ -8,6 +8,8 @@ sys.path.append(str(PACKAGE_ROOT))
 
 from prediction_model.config import config
 import prediction_model.processing.preprocessing as pp
+from prediction_model.util.logger_util import logging
+
 
 classification_pipeline = Pipeline(steps=
     [
@@ -15,6 +17,7 @@ classification_pipeline = Pipeline(steps=
         ('CustomScaler', pp.CustomScaler(cols = config.NUMERICAL_COLS,scaling = config.scaling))
     ]
 )
+
 
 # from prediction_model.processing.data_handling import separate_data,load_dataset
 #

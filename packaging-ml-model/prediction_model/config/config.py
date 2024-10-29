@@ -10,6 +10,8 @@ import numpy as np
 PACKAGE_ROOT = pathlib.Path(prediction_model.__file__).resolve().parent
 
 DATAPATH = os.path.join(PACKAGE_ROOT,"datasets")
+LOGPATH = os.path.join(PACKAGE_ROOT,"logs")
+LOGFILE = 'log.txt'
 
 FILE_NAME = 'raw.csv'
 TRAIN_FILE = 'train.csv'

@@ -6,6 +6,7 @@ import numpy as np
 from sklearn.base import BaseEstimator,TransformerMixin
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
+from prediction_model.util.logger_util import logging
 
 PACKAGE_ROOT = Path(os.path.abspath(os.path.dirname(__file__))).parent.parent
 sys.path.append(str(PACKAGE_ROOT))
@@ -26,6 +27,7 @@ class CustomNumericalImputer(BaseEstimator,TransformerMixin):
         for col in self.cols:
             X[col] = impute.fit_transform(X[[col]])
         #print('Impute',X)
+        logging.info("Data imputation is done")
         return X
 
 class CustomScaler(BaseEstimator,TransformerMixin):
@@ -41,6 +43,7 @@ class CustomScaler(BaseEstimator,TransformerMixin):
         for col in self.cols:
             X[col] = scaler.fit_transform(X[[col]])
         #print('Scaler',X)
+        logging.info("Data scaling is done")
         return X
 
 # from prediction_model.config import config
