@@ -6,17 +6,26 @@ import sys
 PACKAGE_ROOT = Path(os.path.abspath(os.path.dirname(__file__))).parent
 sys.path.append(str(PACKAGE_ROOT))
 
-from prediction_model.config import config
 import prediction_model.processing.preprocessing as pp
 from prediction_model.util.logger_util import logging
 
+class TransformPipeline:
+    def __init__(self,numerical_cols,strategy,scaling):
+        self.numerical_cols = numerical_cols
+        self.strategy = strategy
+        self.scaling = scaling
 
-classification_pipeline = Pipeline(steps=
-    [
-        ('CustomNumericalImputer',pp.CustomNumericalImputer(cols = config.NUMERICAL_COLS,strategy = config.strategy)),
-        ('CustomScaler', pp.CustomScaler(cols = config.NUMERICAL_COLS,scaling = config.scaling))
-    ]
-)
+    def transform_classification_pipeline(self):
+        try:
+            classification_pipeline = Pipeline(steps=
+            [
+                ('CustomNumericalImputer',pp.CustomNumericalImputer(cols = self.numerical_cols,strategy = self.strategy)),
+                ('CustomScaler', pp.CustomScaler(cols = self.numerical_cols,scaling = self.scaling)),
+            ]
+            )
+            return classification_pipeline
+        except Exception as e:
+            logging.error(f"Error while fitting pipeline: {e}")
 
 
 # from prediction_model.processing.data_handling import separate_data,load_dataset

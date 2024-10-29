@@ -21,7 +21,7 @@ MODEL_NAME = 'classification.pkl'
 SAVE_MODEL_PATH = os.path.join(PACKAGE_ROOT,'trained_models')
 
 TARGET = 'Outcome'
-
+TEST_SIZE = 0.2
 #Final features used in the model
 FEATURES = ["Pregnancies","Glucose","BloodPressure","SkinThickness","Insulin","BMI",
             "DiabetesPedigreeFunction","Age","Outcome"]
@@ -29,13 +29,13 @@ NUMERICAL_COLS = ["Pregnancies","Glucose","BloodPressure","SkinThickness","Insul
                   "BMI","DiabetesPedigreeFunction","Age"]
 
 #Impute Columns
-strategy='median'
+STRATEGY='median'
 
 #Scaling
-scaling=StandardScaler()
+SCALING=StandardScaler()
 
 #Models
-models = {
+MODELS = {
     'RandomForest': RandomForestClassifier(),
     'Ada_Boost': AdaBoostClassifier(),
     'LogisticRegression': LogisticRegression(),
@@ -43,7 +43,7 @@ models = {
 }
 
 #parameters
-param_distributions = {
+PARAM_DISTRIBUTIONS= {
     'RandomForest': {'n_estimators': [50, 100, 200], 'max_depth': [None, 10, 20, 30]},
     'AdaBoost': {'n_estimators': [50, 100, 200], 'learning_rate': [0.01, 0.1, 1.0]},
     'LogisticRegression': {"C":np.logspace(-3,3,7), "penalty":["l1","l2"]},

@@ -1,30 +1,30 @@
-INFO:2024-10-29 15:28:42,706:Triggering from training
-INFO:2024-10-29 15:28:42,725:File raw.csv loaded in the dataframe from path C:\Users\LUCKY\PycharmProjects\MlopsProject\packaging-ml-model\prediction_model\datasets
-INFO:2024-10-29 15:28:42,739:Data got separated in target column Outcome and independent columns Index(['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin',
+INFO:2024-10-29 23:23:29,375:Triggering from training
+INFO:2024-10-29 23:23:29,419:File raw.csv loaded in the dataframe from path C:\Users\LUCKY\PycharmProjects\MlopsProject\packaging-ml-model\prediction_model\datasets
+INFO:2024-10-29 23:23:29,433:Data got separated in target column Outcome and independent columns Index(['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin',
        'BMI', 'DiabetesPedigreeFunction', 'Age'],
       dtype='object')
-INFO:2024-10-29 15:28:42,739:Data Transformation pipeline has started
-INFO:2024-10-29 15:28:42,772:Data imputation is done
-INFO:2024-10-29 15:28:42,791:Data scaling is done
-INFO:2024-10-29 15:28:42,791:Data Transformation pipeline has finished
-INFO:2024-10-29 15:28:42,796:Data is splitted into train and test
-INFO:2024-10-29 15:28:42,798:Finding the best model
-INFO:2024-10-29 15:28:43,217:Model Report:{'RandomForest': 0.7142857142857143, 'Ada_Boost': 0.7337662337662337, 'LogisticRegression': 0.7532467532467533, 'SupportVectorMachine': 0.7272727272727273}
-INFO:2024-10-29 15:28:43,220:Best model is:LogisticRegression()
-INFO:2024-10-29 15:28:43,418:Best parameters for LogisticRegression are : {'penalty': 'l2', 'C': np.float64(10.0)}
-INFO:2024-10-29 15:28:43,418:Best score for LogisticRegression is: 0.7655071304811408
-INFO:2024-10-29 15:28:43,419:Best score for LogisticRegression is: LogisticRegression(C=np.float64(10.0))
-INFO:2024-10-29 15:28:43,421:Model has been saved under the name classification.pkl
-WARNING:2024-10-29 15:28:52,538:Save me
-INFO:2024-10-29 15:28:52,542:Model has been loaded
-INFO:2024-10-29 15:28:52,542:Triggering from prediction
-INFO:2024-10-29 15:28:52,547:File test.csv loaded in the dataframe from path C:\Users\LUCKY\PycharmProjects\MlopsProject\packaging-ml-model\prediction_model\datasets
-INFO:2024-10-29 15:28:52,548:Test data loaded
-INFO:2024-10-29 15:28:52,549:Data got separated in target column Outcome and independent columns Index(['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin',
+INFO:2024-10-29 23:23:29,433:Data Transformation pipeline has started
+INFO:2024-10-29 23:23:29,478:Data imputation is done
+INFO:2024-10-29 23:23:29,499:Data scaling is done
+INFO:2024-10-29 23:23:29,499:Data Transformation pipeline has finished
+INFO:2024-10-29 23:23:29,504:Data is splitted into train and test
+INFO:2024-10-29 23:23:29,527:Finding the best model
+INFO:2024-10-29 23:23:29,969:Model Report:{'RandomForest': 0.7402597402597403, 'Ada_Boost': 0.7337662337662337, 'LogisticRegression': 0.7532467532467533, 'SupportVectorMachine': 0.7272727272727273}
+INFO:2024-10-29 23:23:29,975:Best model is:LogisticRegression()
+INFO:2024-10-29 23:23:30,457:Best parameters for LogisticRegression are : {'penalty': 'l2', 'C': np.float64(10.0)}
+INFO:2024-10-29 23:23:30,458:Best score for LogisticRegression is: 0.7655071304811408
+INFO:2024-10-29 23:23:30,458:Best score for LogisticRegression is: LogisticRegression(C=np.float64(10.0))
+INFO:2024-10-29 23:23:30,464:Model has been saved under the name classification.pkl
+INFO:2024-10-29 23:23:39,942:Triggering from prediction
+INFO:2024-10-29 23:23:39,960:Model has been loaded
+INFO:2024-10-29 23:23:39,960:Loading model done
+INFO:2024-10-29 23:23:39,970:File test.csv loaded in the dataframe from path C:\Users\LUCKY\PycharmProjects\MlopsProject\packaging-ml-model\prediction_model\datasets
+INFO:2024-10-29 23:23:39,972:Test data loaded
+INFO:2024-10-29 23:23:39,973:Data got separated in target column Outcome and independent columns Index(['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin',
        'BMI', 'DiabetesPedigreeFunction', 'Age'],
       dtype='object')
-INFO:2024-10-29 15:28:52,549:Test data separated
-INFO:2024-10-29 15:28:52,551:The result is ['Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+INFO:2024-10-29 23:23:39,973:Test data separated
+INFO:2024-10-29 23:23:39,978:The result is ['Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
  'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic'
  'Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic'
  'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic'

@@ -20,15 +20,18 @@ class CustomNumericalImputer(BaseEstimator,TransformerMixin):
         return self
 
     def transform(self, X):
-        X=X.copy()
-        impute = SimpleImputer(strategy=self.strategy)
-        if self.cols == None:
-            self.cols = list(X.columns)
-        for col in self.cols:
-            X[col] = impute.fit_transform(X[[col]])
-        #print('Impute',X)
-        logging.info("Data imputation is done")
-        return X
+        try:
+            X=X.copy()
+            impute = SimpleImputer(strategy=self.strategy)
+            if self.cols == None:
+                self.cols = list(X.columns)
+            for col in self.cols:
+                X[col] = impute.fit_transform(X[[col]])
+            #print('Impute',X)
+            logging.info("Data imputation is done")
+            return X
+        except Exception as e:
+            logging.error(f"Error during data imputation: {e}")
 
 class CustomScaler(BaseEstimator,TransformerMixin):
     def __init__(self, cols=None,scaling=StandardScaler()):
@@ -39,12 +42,15 @@ class CustomScaler(BaseEstimator,TransformerMixin):
         return self
 
     def transform(self, X):
-        scaler = self.scaling
-        for col in self.cols:
-            X[col] = scaler.fit_transform(X[[col]])
-        #print('Scaler',X)
-        logging.info("Data scaling is done")
-        return X
+        try:
+            scaler = self.scaling
+            for col in self.cols:
+                X[col] = scaler.fit_transform(X[[col]])
+            #print('Scaler',X)
+            logging.info("Data scaling is done")
+            return X
+        except Exception as e:
+            logging.error(f"Error during data scaling: {e}")
 
 # from prediction_model.config import config
 # print(config.strategy)
