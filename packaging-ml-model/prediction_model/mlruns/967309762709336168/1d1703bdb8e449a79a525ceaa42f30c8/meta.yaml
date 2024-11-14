@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/967309762709336168/1d1703bdb8e449a79a525ceaa42f30c8/artifacts
+end_time: 1731575558173
+entry_point_name: ''
+experiment_id: '967309762709336168'
+lifecycle_stage: active
+run_id: 1d1703bdb8e449a79a525ceaa42f30c8
+run_name: SupportVectorMachine
+run_uuid: 1d1703bdb8e449a79a525ceaa42f30c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731575552675
+status: 3
+tags: []
+user_id: LUCKY

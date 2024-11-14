@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/613272565889218190/dffab1405d314289804865595bb4a4ba/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '613272565889218190'
+lifecycle_stage: active
+run_id: dffab1405d314289804865595bb4a4ba
+run_name: dazzling-mink-794
+run_uuid: dffab1405d314289804865595bb4a4ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731518051400
+status: 1
+tags: []
+user_id: LUCKY

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/613272565889218190/24b11e71236d4a29a5e40a97b4954ee0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '613272565889218190'
+lifecycle_stage: active
+run_id: 24b11e71236d4a29a5e40a97b4954ee0
+run_name: trusting-crab-690
+run_uuid: 24b11e71236d4a29a5e40a97b4954ee0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731522096782
+status: 1
+tags: []
+user_id: LUCKY

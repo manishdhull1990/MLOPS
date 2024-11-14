@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/613272565889218190/fcdb144d58dc4ed295024d155017b9c4/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '613272565889218190'
+lifecycle_stage: active
+run_id: fcdb144d58dc4ed295024d155017b9c4
+run_name: delicate-cat-288
+run_uuid: fcdb144d58dc4ed295024d155017b9c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731511535172
+status: 1
+tags: []
+user_id: LUCKY

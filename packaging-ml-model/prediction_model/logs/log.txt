@@ -1,57 +1,58 @@
-INFO:2024-10-29 23:23:29,375:Triggering from training
-INFO:2024-10-29 23:23:29,419:File raw.csv loaded in the dataframe from path C:\Users\LUCKY\PycharmProjects\MlopsProject\packaging-ml-model\prediction_model\datasets
-INFO:2024-10-29 23:23:29,433:Data got separated in target column Outcome and independent columns Index(['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin',
+INFO:2024-11-14 19:28:34,452:Triggering from training
+INFO:2024-11-14 19:28:34,469:File raw.csv loaded in the dataframe from path C:\Users\LUCKY\PycharmProjects\MlopsProject\packaging-ml-model\prediction_model\datasets
+INFO:2024-11-14 19:28:34,483:Data got separated in target column Outcome and independent columns Index(['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin',
        'BMI', 'DiabetesPedigreeFunction', 'Age'],
       dtype='object')
-INFO:2024-10-29 23:23:29,433:Data Transformation pipeline has started
-INFO:2024-10-29 23:23:29,478:Data imputation is done
-INFO:2024-10-29 23:23:29,499:Data scaling is done
-INFO:2024-10-29 23:23:29,499:Data Transformation pipeline has finished
-INFO:2024-10-29 23:23:29,504:Data is splitted into train and test
-INFO:2024-10-29 23:23:29,527:Finding the best model
-INFO:2024-10-29 23:23:29,969:Model Report:{'RandomForest': 0.7402597402597403, 'Ada_Boost': 0.7337662337662337, 'LogisticRegression': 0.7532467532467533, 'SupportVectorMachine': 0.7272727272727273}
-INFO:2024-10-29 23:23:29,975:Best model is:LogisticRegression()
-INFO:2024-10-29 23:23:30,457:Best parameters for LogisticRegression are : {'penalty': 'l2', 'C': np.float64(10.0)}
-INFO:2024-10-29 23:23:30,458:Best score for LogisticRegression is: 0.7655071304811408
-INFO:2024-10-29 23:23:30,458:Best score for LogisticRegression is: LogisticRegression(C=np.float64(10.0))
-INFO:2024-10-29 23:23:30,464:Model has been saved under the name classification.pkl
-INFO:2024-10-29 23:23:39,942:Triggering from prediction
-INFO:2024-10-29 23:23:39,960:Model has been loaded
-INFO:2024-10-29 23:23:39,960:Loading model done
-INFO:2024-10-29 23:23:39,970:File test.csv loaded in the dataframe from path C:\Users\LUCKY\PycharmProjects\MlopsProject\packaging-ml-model\prediction_model\datasets
-INFO:2024-10-29 23:23:39,972:Test data loaded
-INFO:2024-10-29 23:23:39,973:Data got separated in target column Outcome and independent columns Index(['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin',
+INFO:2024-11-14 19:28:34,483:Data Transformation pipeline has started
+INFO:2024-11-14 19:28:34,533:Data imputation is done
+INFO:2024-11-14 19:28:34,556:Data scaling is done
+INFO:2024-11-14 19:28:34,556:Data Transformation pipeline has finished
+INFO:2024-11-14 19:28:34,564:Data is splitted into train and test
+INFO:2024-11-14 19:28:34,755:Finding the best model
+INFO:2024-11-14 19:28:34,755:Initiate MLFlow for Experiment tracking
+INFO:2024-11-14 19:29:01,382:Best parameters for RandomForest are : {'accuracy': 0.7402597402597403, 'precision': np.float64(0.7402597402597403), 'recall': np.float64(0.7402597402597403), 'f1': np.float64(0.7402597402597403), 'auc_roc': np.float64(0.7171717171717171), 'best_estimator': RandomForestClassifier(max_depth=30)}
+INFO:2024-11-14 19:29:01,382:Initiate MLFlow for Experiment tracking
+INFO:2024-11-14 19:29:16,773:Best parameters for Ada_Boost are : {'accuracy': 0.7662337662337663, 'precision': np.float64(0.7631285523918305), 'recall': np.float64(0.7662337662337663), 'f1': np.float64(0.7641375997438018), 'auc_roc': np.float64(0.7373737373737373), 'best_estimator': AdaBoostClassifier(learning_rate=0.1, n_estimators=200)}
+INFO:2024-11-14 19:29:16,774:Initiate MLFlow for Experiment tracking
+INFO:2024-11-14 19:29:23,140:Best parameters for LogisticRegression are : {'accuracy': 0.7532467532467533, 'precision': np.float64(0.7553936387360154), 'recall': np.float64(0.7532467532467533), 'f1': np.float64(0.7541909620991253), 'auc_roc': np.float64(0.7353535353535354), 'best_estimator': LogisticRegression(C=np.float64(10.0))}
+INFO:2024-11-14 19:29:23,140:Initiate MLFlow for Experiment tracking
+INFO:2024-11-14 19:29:30,211:Best parameters for SupportVectorMachine are : {'accuracy': 0.7207792207792207, 'precision': np.float64(0.7159340659340659), 'recall': np.float64(0.7207792207792207), 'f1': np.float64(0.7175697865353037), 'auc_roc': np.float64(0.6858585858585858), 'best_estimator': SVC(C=10, gamma=0.1)}
+INFO:2024-11-14 19:29:30,274:Model has been saved under the name classification.pkl
+INFO:2024-11-14 19:30:52,605:Triggering from prediction
+INFO:2024-11-14 19:30:52,728:Model has been loaded
+INFO:2024-11-14 19:30:52,744:File test.csv loaded in the dataframe from path C:\Users\LUCKY\PycharmProjects\MlopsProject\packaging-ml-model\prediction_model\datasets
+INFO:2024-11-14 19:30:52,744:Data got separated in target column Outcome and independent columns Index(['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin',
        'BMI', 'DiabetesPedigreeFunction', 'Age'],
       dtype='object')
-INFO:2024-10-29 23:23:39,973:Test data separated
-INFO:2024-10-29 23:23:39,978:The result is ['Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic'
- 'Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic'
- 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
- 'Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Diabetic' 'Diabetic' 'Diabetic' 'Diabetic' 'Diabetic'
- 'Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic'
+INFO:2024-11-14 19:30:52,775:The result is ['Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic'
+ 'Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Diabetic'
+ 'Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
  'Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic'
  'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic'
- 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic'
+ 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
  'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
- 'Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic'
  'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic'
- 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic'
- 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic'
  'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Diabetic' 'Diabetic'
- 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
  'Not Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic'
  'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic'
- 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic']
+ 'Not Diabetic' 'Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic'
+ 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic'
+ 'Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Diabetic' 'Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic' 'Diabetic' 'Not Diabetic' 'Not Diabetic' 'Not Diabetic'
+ 'Not Diabetic']

@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/104049149004282874
+creation_time: 1731592563691
+experiment_id: '104049149004282874'
+last_update_time: 1731592563691
+lifecycle_stage: active
+name: Loan_prediction

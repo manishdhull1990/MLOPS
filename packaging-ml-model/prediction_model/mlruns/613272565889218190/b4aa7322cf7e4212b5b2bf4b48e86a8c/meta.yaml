@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/613272565889218190/b4aa7322cf7e4212b5b2bf4b48e86a8c/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '613272565889218190'
+lifecycle_stage: active
+run_id: b4aa7322cf7e4212b5b2bf4b48e86a8c
+run_name: redolent-mare-295
+run_uuid: b4aa7322cf7e4212b5b2bf4b48e86a8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731520073945
+status: 1
+tags: []
+user_id: LUCKY

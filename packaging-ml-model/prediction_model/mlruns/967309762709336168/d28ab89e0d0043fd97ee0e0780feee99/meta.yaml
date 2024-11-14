@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/967309762709336168/d28ab89e0d0043fd97ee0e0780feee99/artifacts
+end_time: 1731575552659
+entry_point_name: ''
+experiment_id: '967309762709336168'
+lifecycle_stage: active
+run_id: d28ab89e0d0043fd97ee0e0780feee99
+run_name: LogisticRegression
+run_uuid: d28ab89e0d0043fd97ee0e0780feee99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731575547071
+status: 3
+tags: []
+user_id: LUCKY

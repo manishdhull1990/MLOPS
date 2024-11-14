@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/967309762709336168/f98f9f026316451e9e6369c62fafb65a/artifacts
+end_time: 1731575547058
+entry_point_name: ''
+experiment_id: '967309762709336168'
+lifecycle_stage: active
+run_id: f98f9f026316451e9e6369c62fafb65a
+run_name: Ada_Boost
+run_uuid: f98f9f026316451e9e6369c62fafb65a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731575535706
+status: 3
+tags: []
+user_id: LUCKY

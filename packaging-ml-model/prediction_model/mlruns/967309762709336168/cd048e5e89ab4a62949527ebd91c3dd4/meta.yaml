@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/967309762709336168/cd048e5e89ab4a62949527ebd91c3dd4/artifacts
+end_time: 1731572064193
+entry_point_name: ''
+experiment_id: '967309762709336168'
+lifecycle_stage: active
+run_id: cd048e5e89ab4a62949527ebd91c3dd4
+run_name: RandomForest
+run_uuid: cd048e5e89ab4a62949527ebd91c3dd4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731572057837
+status: 4
+tags: []
+user_id: LUCKY

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/104049149004282874/a27373950b7a470eb61a031bb5e6c476/artifacts
+end_time: 1731592596091
+entry_point_name: ''
+experiment_id: '104049149004282874'
+lifecycle_stage: active
+run_id: a27373950b7a470eb61a031bb5e6c476
+run_name: DecisionTreeClassifier
+run_uuid: a27373950b7a470eb61a031bb5e6c476
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731592564261
+status: 3
+tags: []
+user_id: LUCKY

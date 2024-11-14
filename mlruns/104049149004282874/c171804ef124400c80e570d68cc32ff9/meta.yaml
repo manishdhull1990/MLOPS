@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/104049149004282874/c171804ef124400c80e570d68cc32ff9/artifacts
+end_time: 1731592608095
+entry_point_name: ''
+experiment_id: '104049149004282874'
+lifecycle_stage: active
+run_id: c171804ef124400c80e570d68cc32ff9
+run_name: RandomForestClassifier
+run_uuid: c171804ef124400c80e570d68cc32ff9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731592601964
+status: 3
+tags: []
+user_id: LUCKY

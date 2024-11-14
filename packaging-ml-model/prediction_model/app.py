@@ -17,10 +17,10 @@ class classification:
 
     def training(self,logpath,log_file_name,test_size,datapath, file_name,target,train_file,
                  test_file,model_path,model_name,features,models,param_distributions,
-                 numerical_cols,strategy,scaling):
+                 numerical_cols,strategy,scaling,experiment_name):
         train = training_pipeline.Training(logpath,log_file_name,test_size,datapath, file_name,target,train_file,
                  test_file,model_path,model_name,features,models,param_distributions,
-                 numerical_cols,strategy,scaling)
+                 numerical_cols,strategy,scaling,experiment_name)
         train.perform_training()
 
     def prediction(self,datapath,logpath, log_file_name,test_file_name,target,model_path,model_name,features):
@@ -34,10 +34,10 @@ if __name__ == '__main__':
     cls = classification()
     if pipeline_execution == 'training':
         cls.training(config.LOGPATH,config.LOGFILE,config.TEST_SIZE,config.DATAPATH,
-                   config.FILE_NAME,config.TARGET,config.TRAIN_FILE,config.TEST_FILE,
-                   config.SAVE_MODEL_PATH,config.MODEL_NAME,config.FEATURES,
-                   config.MODELS,config.PARAM_DISTRIBUTIONS,
-                   config.NUMERICAL_COLS,config.STRATEGY,config.SCALING)
+            config.FILE_NAME,config.TARGET,config.TRAIN_FILE,config.TEST_FILE,
+            config.SAVE_MODEL_PATH,config.MODEL_NAME,config.FEATURES,config.MODELS,
+            config.PARAM_DISTRIBUTIONS,config.NUMERICAL_COLS,config.STRATEGY,
+            config.SCALING,config.EXPERIMENT_NAME)
 
     elif pipeline_execution == 'prediction':
         cls.prediction(config.DATAPATH,config.LOGPATH,config.LOGFILE,config.TEST_FILE,config.TARGET,

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LUCKY/PycharmProjects/MlopsProject/packaging-ml-model/prediction_model/mlruns/613272565889218190/b0d0457dd0004c3990fe3b5bcc08d22d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '613272565889218190'
+lifecycle_stage: active
+run_id: b0d0457dd0004c3990fe3b5bcc08d22d
+run_name: peaceful-lamb-723
+run_uuid: b0d0457dd0004c3990fe3b5bcc08d22d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731517879341
+status: 1
+tags: []
+user_id: LUCKY

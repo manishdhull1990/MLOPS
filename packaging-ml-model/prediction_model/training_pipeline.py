@@ -9,18 +9,19 @@ sys.path.append(str(PACKAGE_ROOT))
 # # Then perform import
 import prediction_model.processing.data_handling as data_manipulation
 import prediction_model.pipeline as pipeline
-import prediction_model.processing.model_training as training
+#import prediction_model.processing.model_training as training
+import prediction_model.processing.mlflow_model_training as training
 from prediction_model.util.logger_util import logging
 
 class Training:
     def __init__(self,logpath,log_file_name,test_size,datapath, file_name,target,train_file,
                  test_file,model_path,model_name,features,models,param_distributions,
-                 numerical_cols,strategy,scaling):
+                 numerical_cols,strategy,scaling,experiment_name):
         self.logfilename = os.path.join(logpath,log_file_name)
         self.pipe=pipeline.TransformPipeline(numerical_cols,strategy,scaling).transform_classification_pipeline()
         self.data_manipulation = data_manipulation.data_handling(datapath,file_name,target,
                                                         model_path,model_name,features)
-        self.best_model_finder = training.modelFinder(models,param_distributions)
+        self.best_model_finder = training.modelFinder(models,param_distributions,experiment_name)
         self.test_size = test_size
         self.datapath = datapath
         self.file_name = file_name
